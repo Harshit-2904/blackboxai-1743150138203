@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Management - Job Portal CMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <div class="w-64 bg-white shadow-lg">
+            <div class="p-4">
+                <h1 class="text-xl font-bold text-gray-800">Job Portal CMS</h1>
+            </div>
+            <nav class="mt-4">
+                <a href="admin-dashboard.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-700">
+                    <i class="fas fa-home mr-3"></i>
+                    Dashboard
+                </a>
+                <a href="admin-blogs.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-700">
+                    <i class="fas fa-blog mr-3"></i>
+                    Blogs
+                </a>
+                <a href="admin-jobs.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-700">
+                    <i class="fas fa-briefcase mr-3"></i>
+                    Jobs
+                </a>
+                <a href="admin-content.html" class="flex items-center px-4 py-3 bg-blue-50 text-blue-700">
+                    <i class="fas fa-file-alt mr-3"></i>
+                    Content
+                </a>
+                <a href="admin-settings.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-700">
+                    <i class="fas fa-cog mr-3"></i>
+                    Settings
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 overflow-auto">
+            <header class="bg-white shadow-sm">
+                <div class="flex items-center justify-between px-6 py-4">
+                    <h2 class="text-xl font-semibold text-gray-800">Content Management</h2>
+                    <div class="flex items-center space-x-4">
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                            <i class="fas fa-plus mr-2"></i>Add New Page
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Management -->
+            <div class="p-6">
+                <!-- Pages Section -->
+                <div class="mb-8">
+                    <h3 class="text-lg font-semibold mb-4">Static Pages</h3>
+                    <div class="bg-white rounded-lg shadow overflow-hidden">
+                        <table class="w-full">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Page Title
+                                    </th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        URL
+                                    </th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Last Modified
+                                    </th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Actions
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4">
+                                        <div class="font-medium text-gray-900">About Us</div>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-gray-500">
+                                        /about.html
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-gray-500">
+                                        Mar 15, 2024
+                                    </td>
+                                    <td class="px-6 py-4 text-sm">
+                                        <div class="flex space-x-3">
+                                            <button class="text-blue-600 hover:text-blue-900">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button class="text-gray-600 hover:text-gray-900">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- Add more rows for other pages -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Media Library -->
+                <div class="mb-8">
+                    <h3 class="text-lg font-semibold mb-4">Media Library</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                        <!-- Upload Box -->
+                        <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-blue-500 cursor-pointer">
+                            <i class="fas fa-cloud-upload-alt text-4xl text-gray-400 mb-4"></i>
+                            <p class="text-sm text-gray-600">Drag and drop files here<br>or click to upload</p>
+                        </div>
+
+                        <!-- Media Items -->
+                        <div class="bg-white rounded-lg shadow overflow-hidden">
+                            <img src="https://via.placeholder.com/300x200" alt="Media" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <p class="text-sm font-medium">hero-image.jpg</p>
+                                <p class="text-xs text-gray-500">800KB • Mar 15, 2024</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow overflow-hidden">
+                            <img src="https://via.placeholder.com/300x200" alt="Media" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <p class="text-sm font-medium">team-photo.jpg</p>
+                                <p class="text-xs text-gray-500">1.2MB • Mar 14, 2024</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow overflow-hidden">
+                            <img src="https://via.placeholder.com/300x200" alt="Media" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <p class="text-sm font-medium">office.jpg</p>
+                                <p class="text-xs text-gray-500">950KB • Mar 13, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Management -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Menu Management</h3>
+                    <div class="bg-white rounded-lg shadow p-6">
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Header Navigation</label>
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
+                                    <span>Home</span>
+                                    <div class="flex space-x-2">
+                                        <button class="text-gray-600 hover:text-gray-900"><i class="fas fa-arrows-alt"></i></button>
+                                        <button class="text-blue-600 hover:text-blue-900"><i class="fas fa-edit"></i></button>
+                                        <button class="text-red-600 hover:text-red-900"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
+                                    <span>Jobs</span>
+                                    <div class="flex space-x-2">
+                                        <button class="text-gray-600 hover:text-gray-900"><i class="fas fa-arrows-alt"></i></button>
+                                        <button class="text-blue-600 hover:text-blue-900"><i class="fas fa-edit"></i></button>
+                                        <button class="text-red-600 hover:text-red-900"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
+                                    <span>About</span>
+                                    <div class="flex space-x-2">
+                                        <button class="text-gray-600 hover:text-gray-900"><i class="fas fa-arrows-alt"></i></button>
+                                        <button class="text-blue-600 hover:text-blue-900"><i class="fas fa-edit"></i></button>
+                                        <button class="text-red-600 hover:text-red-900"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="mt-4 text-blue-600 hover:text-blue-800 text-sm">
+                                <i class="fas fa-plus mr-1"></i> Add Menu Item
+                            </button>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Footer Navigation</label>
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
+                                    <span>Privacy Policy</span>
+                                    <div class="flex space-x-2">
+                                        <button class="text-gray-600 hover:text-gray-900"><i class="fas fa-arrows-alt"></i></button>
+                                        <button class="text-blue-600 hover:text-blue-900"><i class="fas fa-edit"></i></button>
+                                        <button class="text-red-600 hover:text-red-900"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
+                                    <span>Terms of Service</span>
+                                    <div class="flex space-x-2">
+                                        <button class="text-gray-600 hover:text-gray-900"><i class="fas fa-arrows-alt"></i></button>
+                                        <button class="text-blue-600 hover:text-blue-900"><i class="fas fa-edit"></i></button>
+                                        <button class="text-red-600 hover:text-red-900"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="mt-4 text-blue-600 hover:text-blue-800 text-sm">
+                                <i class="fas fa-plus mr-1"></i> Add Menu Item
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
