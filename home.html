@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal - Find Your Dream Job</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="styles-dark.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="home.html" class="text-2xl font-bold text-blue-600">JobPortal</a>
+                    <div class="hidden md:flex items-center ml-10 space-x-6">
+                        <a href="jobs.html" class="nav-link text-gray-600 hover:text-blue-600">Jobs</a>
+                        <a href="companies.html" class="nav-link text-gray-600 hover:text-blue-600">Companies</a>
+                        <a href="index.html" class="nav-link text-gray-600 hover:text-blue-600">Blog</a>
+                        <a href="about.html" class="nav-link text-gray-600 hover:text-blue-600">About</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="admin-login.html" class="nav-link text-gray-600 hover:text-blue-600">Admin</a>
+                    <a href="login.html" class="nav-link text-gray-600 hover:text-blue-600">Login</a>
+                    <a href="signup.html" class="btn-primary bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white relative overflow-hidden">
+        <div class="container mx-auto px-6 py-20">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 animate-fadeIn">Find Your Dream Job Today</h1>
+                    <p class="text-xl mb-8 animate-slideIn">Connect with top employers and discover opportunities that match your skills and aspirations.</p>
+                    <div class="bg-white rounded-lg p-2 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                        <input type="text" placeholder="Job title or keyword" class="search-input flex-1 px-4 py-2 rounded-lg focus:outline-none text-gray-800">
+                        <input type="text" placeholder="Location" class="search-input flex-1 px-4 py-2 rounded-lg focus:outline-none text-gray-800">
+                        <button class="btn-primary text-white px-6 py-2 rounded-lg">Search Jobs</button>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="Job Search" class="rounded-lg shadow-xl hover-card">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Categories -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Popular Job Categories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="feature-card bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <i class="category-icon fas fa-laptop-code text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Technology</h3>
+                    <p class="text-gray-600">1,234 jobs available</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <i class="category-icon fas fa-chart-line text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Finance</h3>
+                    <p class="text-gray-600">867 jobs available</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <i class="category-icon fas fa-palette text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Design</h3>
+                    <p class="text-gray-600">543 jobs available</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <i class="category-icon fas fa-bullhorn text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Marketing</h3>
+                    <p class="text-gray-600">765 jobs available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Jobs -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Jobs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="featured-jobs">
+                <!-- Jobs will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Career Tips & Insights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-posts">
+                <!-- Blog posts will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="faq-item bg-white rounded-lg shadow p-6">
+                    <button class="flex justify-between items-center w-full">
+                        <h3 class="text-lg font-semibold">How do I create an account?</h3>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        Click on the "Sign Up" button in the top right corner and follow the registration process. You'll need to provide some basic information and verify your email address.
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-lg shadow p-6">
+                    <button class="flex justify-between items-center w-full">
+                        <h3 class="text-lg font-semibold">How do I post a job?</h3>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        To post a job, click on the "Post a Job" button and fill out the job details form. Make sure to include all relevant information about the position.
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-lg shadow p-6">
+                    <button class="flex justify-between items-center w-full">
+                        <h3 class="text-lg font-semibold">Is it free to apply for jobs?</h3>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        Yes, applying for jobs on our platform is completely free for job seekers. Create an account and start applying to positions that match your skills and interests.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Find Your Next Opportunity?</h2>
+            <p class="text-xl mb-8">Join thousands of job seekers who have found their dream jobs through our platform.</p>
+            <a href="signup.html" class="btn-primary bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">JobPortal</h3>
+                    <p class="text-gray-400">Find your dream job and connect with top employers.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="jobs.html" class="text-gray-400 hover:text-white">Find Jobs</a></li>
+                        <li><a href="post-job.html" class="text-gray-400 hover:text-white">Post a Job</a></li>
+                        <li><a href="companies.html" class="text-gray-400 hover:text-white">Companies</a></li>
+                        <li><a href="blog1.html" class="text-gray-400 hover:text-white">Career Advice</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2024 JobPortal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="jobs.js"></script>
+    <script src="blogs.js"></script>
+</body>
+</html>
