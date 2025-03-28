@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companies - Job Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-blue-600">JobPortal</a>
+                    <div class="hidden md:flex items-center ml-10 space-x-6">
+                        <a href="jobs.html" class="text-gray-600 hover:text-blue-600">Jobs</a>
+                        <a href="companies.html" class="text-blue-600">Companies</a>
+                        <a href="index.html" class="text-gray-600 hover:text-blue-600">Blog</a>
+                        <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="login.html" class="text-gray-600 hover:text-blue-600">Login</a>
+                    <a href="signup.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Top Companies Hiring Now</h1>
+            <p class="text-xl mb-8">Discover great places to work and advance your career</p>
+            <div class="max-w-2xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <input type="text" placeholder="Search companies..." class="flex-1 px-6 py-3 rounded-lg text-gray-900">
+                    <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Companies -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Companies</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Company Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://via.placeholder.com/64" alt="Company Logo" class="w-16 h-16 rounded">
+                            <div class="ml-4">
+                                <h3 class="text-xl font-semibold">Tech Corp</h3>
+                                <p class="text-gray-600">San Francisco, CA</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">Leading technology company focused on innovation and user experience.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-briefcase mr-2"></i>
+                            <span>15 open positions</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-6 py-4">
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">View Company Profile</a>
+                    </div>
+                </div>
+
+                <!-- Company Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://via.placeholder.com/64" alt="Company Logo" class="w-16 h-16 rounded">
+                            <div class="ml-4">
+                                <h3 class="text-xl font-semibold">Finance Plus</h3>
+                                <p class="text-gray-600">New York, NY</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">Global financial services firm with opportunities in various sectors.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-briefcase mr-2"></i>
+                            <span>23 open positions</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-6 py-4">
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">View Company Profile</a>
+                    </div>
+                </div>
+
+                <!-- Company Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://via.placeholder.com/64" alt="Company Logo" class="w-16 h-16 rounded">
+                            <div class="ml-4">
+                                <h3 class="text-xl font-semibold">Design Studio</h3>
+                                <p class="text-gray-600">Los Angeles, CA</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">Creative agency specializing in digital design and branding.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-briefcase mr-2"></i>
+                            <span>8 open positions</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-6 py-4">
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">View Company Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Categories -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Browse by Industry</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <a href="#" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition text-center">
+                    <i class="fas fa-laptop-code text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="font-semibold">Technology</h3>
+                    <p class="text-gray-600">450+ companies</p>
+                </a>
+                <a href="#" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition text-center">
+                    <i class="fas fa-chart-line text-3xl text-green-600 mb-4"></i>
+                    <h3 class="font-semibold">Finance</h3>
+                    <p class="text-gray-600">320+ companies</p>
+                </a>
+                <a href="#" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition text-center">
+                    <i class="fas fa-hospital text-3xl text-red-600 mb-4"></i>
+                    <h3 class="font-semibold">Healthcare</h3>
+                    <p class="text-gray-600">280+ companies</p>
+                </a>
+                <a href="#" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition text-center">
+                    <i class="fas fa-shopping-cart text-3xl text-purple-600 mb-4"></i>
+                    <h3 class="font-semibold">Retail</h3>
+                    <p class="text-gray-600">190+ companies</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">JobPortal</h3>
+                    <p class="text-gray-400">Find your dream job and connect with top employers.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="jobs.html" class="text-gray-400 hover:text-white">Find Jobs</a></li>
+                        <li><a href="post-job.html" class="text-gray-400 hover:text-white">Post a Job</a></li>
+                        <li><a href="companies.html" class="text-gray-400 hover:text-white">Companies</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Career Advice</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2024 JobPortal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
