@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} - Job Portal Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-blue-600">JobPortal</a>
+                    <div class="hidden md:flex items-center ml-10 space-x-6">
+                        <a href="/" class="text-gray-600 hover:text-blue-600">Home</a>
+                        <a href="#jobs" class="text-gray-600 hover:text-blue-600">Jobs</a>
+                        <a href="#blog" class="text-gray-600 hover:text-blue-600">Blog</a>
+                        <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <article class="max-w-4xl mx-auto px-6 py-12">
+        <header class="mb-12">
+            <h1 class="text-4xl font-bold mb-4">{{title}}</h1>
+            <div class="flex items-center text-gray-600">
+                <img src="{{author_image}}" alt="{{author}}" class="w-10 h-10 rounded-full mr-3">
+                <div>
+                    <p class="font-semibold">{{author}}</p>
+                    <p class="text-sm">{{date}}</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="prose prose-lg max-w-none">
+            {{content}}
+        </div>
+
+        <footer class="mt-12 pt-8 border-t">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <button class="flex items-center text-gray-600 hover:text-blue-600">
+                        <i class="far fa-heart mr-2"></i>
+                        <span>Like</span>
+                    </button>
+                    <button class="flex items-center text-gray-600 hover:text-blue-600">
+                        <i class="far fa-comment mr-2"></i>
+                        <span>Comment</span>
+                    </button>
+                    <button class="flex items-center text-gray-600 hover:text-blue-600">
+                        <i class="far fa-share-square mr-2"></i>
+                        <span>Share</span>
+                    </button>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-blue-600 hover:text-blue-800">Previous Post</a>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">Next Post</a>
+                </div>
+            </div>
+        </footer>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">JobPortal</h3>
+                    <p class="text-gray-400">Find your dream job and connect with top employers.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Find Jobs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Post a Job</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Companies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Career Advice</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2024 JobPortal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/app.js"></script>
+</body>
+</html>
